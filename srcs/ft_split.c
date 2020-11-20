@@ -1,16 +1,16 @@
 /* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: vbotte <vbotte@student.42.fr>              +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/20 11:03:38 by vbotte            #+#    #+#             */
-/*   Updated: 2020/11/20 13:46:58 by vfurmane         ###   ########.fr       */
-/*                                                                            */
+/*																			  */
+/*														  :::	   ::::::::   */
+/*	 ft_split.c											:+:		 :+:	:+:   */
+/*													  +:+ +:+		  +:+	  */
+/*	 By: vbotte <vbotte@student.42.fr>				+#+  +:+	   +#+		  */
+/*												  +#+#+#+#+#+	+#+			  */
+/*	 Created: 2020/11/20 11:03:38 by vbotte			   #+#	  #+#			  */
+/*	 Updated: 2020/11/20 13:46:58 by vfurmane		  ###	########.fr		  */
+/*																			  */
 /* ************************************************************************** */
 
-void    test1()
+void	test1()
 {
 	{
 		int		i;
@@ -30,7 +30,7 @@ void    test1()
 	}
 }
 
-void    test2()
+void	test2()
 {
 	{
 		int		i;
@@ -50,7 +50,7 @@ void    test2()
 	}
 }
 
-void    test3()
+void	test3()
 {
 	{
 		int		i;
@@ -70,7 +70,7 @@ void    test3()
 	}
 }
 
-void    test4()
+void	test4()
 {
 	{
 		int		i;
@@ -90,7 +90,7 @@ void    test4()
 	}
 }
 
-void    test5()
+void	test5()
 {
 	{
 		int		i;
@@ -110,7 +110,7 @@ void    test5()
 	}
 }
 
-int             main()
+int				main()
 {
 	printf("===== TEST1 =====\n\n");
 	test1();
