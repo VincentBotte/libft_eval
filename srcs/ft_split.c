@@ -6,87 +6,107 @@
 /*   By: vbotte <vbotte@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 11:03:38 by vbotte            #+#    #+#             */
-/*   Updated: 2020/11/20 11:51:49 by vbotte           ###   ########.fr       */
+/*   Updated: 2020/11/20 13:46:58 by vfurmane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void    test1()
 {
 	{
-		char s[] = "//decoupe//moi//stp//mais//pas//trop//fort//";
-		char c[] = "/";
-		char **res = ft_split(s, c);
-		printf("User            :");
-		int i = 0;
+		int		i;
+		char	s[] = "//decoupe//moi//stp//mais//pas//trop//fort//";
+		char	c[] = "/";
+		char	**res;
+
+		printf("User		: ");
+		res = ft_split(s, c);
+		i = 0;
 		while (res[i])
 			printf(" %s", res[i++]);
+		printf("\n");
 	}
 	{
-		printf("\nExpected        : decoupe moi stp mais pas trop fort\n");
+		printf("Expected	: decoupe moi stp mais pas trop fort\n");
 	}
 }
 
 void    test2()
 {
 	{
-		char s[] = "J'aime pas les espaces, c'est clair?";
-		char c[] = " ";
-		char **res = ft_split(s, c);
-		printf("User            : ");
-		int i = 0;
+		int		i;
+		char	s[] = "J'aime pas les espaces, c'est clair?";
+		char	c[] = " ";
+		char	**res;
+
+		res = ft_split(s, c);
+		printf("User		: ");
+		i = 0;
 		while (res[i])
 			printf("%s", res[i++]);
+		printf("\n");
 	}
 	{
-		printf("\nExpected        : J'aimepaslesespaces,c'estclair?\n");
+		printf("Expected	: J'aimepaslesespaces,c'estclair?\n");
 	}
 }
 
 void    test3()
 {
 	{
-		char s[] = "Trouves les lettres manquantes et tu échappes au KO";
-		char c[] = "ola";
-		char **res = ft_split(s, c);
-		printf("User            : ");
-		int i = 0;
+		int		i;
+		char	s[] = "Trouves les lettres manquantes et tu échappes au KO";
+		char	c[] = "ola";
+		char	**res;
+
+		res = ft_split(s, c);
+		printf("User		: ");
+		i = 0,
 		while (res[i])
 			printf("x%s", res[i++]);
+		printf("\n");
 	}
 	{
-		printf("\nExpected        : xTrxuves xes xettres mxnquxntes et tu échxppes xu KO\n");
+		printf("Expected	: xTrxuves xes xettres mxnquxntes et tu échxppes xu KO\n");
 	}
 }
 
 void    test4()
 {
 	{
-		char s[] = "Y'a aucun séparateur, HA!";
-		char c[] = "/+b=@#$%^&*()-";
-		char **res = ft_split(s, c);
-		printf("User            : ");
-		int i = 0;
+		int		i;
+		char	s[] = "Y'a aucun séparateur, HA!";
+		char	c[] = "/+b=@#$%^&*()-";
+		char	**res;
+
+		res = ft_split(s, c);
+		printf("User		: ");
+		i = 0;
 		while (res[i])
 			printf("%s", res[i++]);
+		printf("\n");
 	}
 	{
-		printf("\nExpected        : Y'a aucun séparateur, HA!\n");
+		printf("Expected		: Y'a aucun séparateur, HA!\n");
 	}
 }
 
 void    test5()
 {
 	{
-		char s[] = "";
-		char c[] = "";
-		char **res = ft_split(s, c);
-		printf("User            :");
-		int i = 0;
+		int		i;
+		char	s[] = "";
+		char	c[] = "";
+		char	**res = ft_split(s, c);
+
+		res = ft_split(s, c);
+		printf("User		: ");
+		i = 0;
 		while (res[i])
 			printf("%s", res[i++]);
+		printf("\n");
 	}
 	{
-		printf("\nExpected        :\n");
+		printf("Expected		: \n");
 	}
 }
 
