@@ -20,7 +20,7 @@ void	test1()
 		char	c = '/';
 		char	**res;
 
-		printf("User		: ");
+		printf("User		:");
 		res = ft_split(s, c);
 		i = 0;
 		while (res[i])
@@ -68,7 +68,7 @@ void	test3()
 		printf("\n");
 	}
 	{
-		printf("Expected	: xTrouve la lettre manquante et tu échxppes xu KO\n");
+		printf("Expected	: xTrouve lx lettre mxnquxnte et tu échxppes xu KO\n");
 	}
 }
 
@@ -81,7 +81,7 @@ void	test4()
 		char	**res;
 
 		res = ft_split(s, c);
-		printf("User		: ");
+		printf("User			: ");
 		i = 0;
 		while (res[i])
 			printf("%s", res[i++]);
@@ -101,7 +101,7 @@ void	test5()
 		char	**res = ft_split(s, c);
 
 		res = ft_split(s, c);
-		printf("User		: ");
+		printf("User			: ");
 		i = 0;
 		while (res[i])
 			printf("%s", res[i++]);
