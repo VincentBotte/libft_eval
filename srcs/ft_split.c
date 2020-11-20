@@ -10,12 +10,14 @@
 /*																			  */
 /* ************************************************************************** */
 
+#include "../libft_eval.h"
+
 void	test1()
 {
 	{
 		int		i;
 		char	s[] = "//decoupe//moi//stp//mais//pas//trop//fort//";
-		char	c[] = "/";
+		char	c = '/';
 		char	**res;
 
 		printf("User		: ");
@@ -35,7 +37,7 @@ void	test2()
 	{
 		int		i;
 		char	s[] = "J'aime pas les espaces, c'est clair?";
-		char	c[] = " ";
+		char	c = ' ';
 		char	**res;
 
 		res = ft_split(s, c);
@@ -54,19 +56,19 @@ void	test3()
 {
 	{
 		int		i;
-		char	s[] = "Trouves les lettres manquantes et tu échappes au KO";
-		char	c[] = "ola";
+		char	s[] = "Trouve la lettre manquante et tu échappes au KO";
+		char	c = 'a';
 		char	**res;
 
 		res = ft_split(s, c);
 		printf("User		: ");
-		i = 0,
+		i = 0;
 		while (res[i])
 			printf("x%s", res[i++]);
 		printf("\n");
 	}
 	{
-		printf("Expected	: xTrxuves xes xettres mxnquxntes et tu échxppes xu KO\n");
+		printf("Expected	: xTrouve la lettre manquante et tu échxppes xu KO\n");
 	}
 }
 
@@ -75,7 +77,7 @@ void	test4()
 	{
 		int		i;
 		char	s[] = "Y'a aucun séparateur, HA!";
-		char	c[] = "/+b=@#$%^&*()-";
+		char	c = '-';
 		char	**res;
 
 		res = ft_split(s, c);
@@ -95,7 +97,7 @@ void	test5()
 	{
 		int		i;
 		char	s[] = "";
-		char	c[] = "";
+		char	c = 0;
 		char	**res = ft_split(s, c);
 
 		res = ft_split(s, c);
