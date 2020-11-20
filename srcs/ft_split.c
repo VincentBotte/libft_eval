@@ -81,14 +81,14 @@ void	test4()
 		char	**res;
 
 		res = ft_split(s, c);
-		printf("User			: ");
+		printf("User		: ");
 		i = 0;
 		while (res[i])
 			printf("%s", res[i++]);
 		printf("\n");
 	}
 	{
-		printf("Expected		: Y'a aucun séparateur, HA!\n");
+		printf("Expected	: Y'a aucun séparateur, HA!\n");
 	}
 }
 
@@ -101,14 +101,14 @@ void	test5()
 		char	**res = ft_split(s, c);
 
 		res = ft_split(s, c);
-		printf("User			: ");
+		printf("User		: ");
 		i = 0;
 		while (res[i])
 			printf("%s", res[i++]);
 		printf("\n");
 	}
 	{
-		printf("Expected		: \n");
+		printf("Expected	: \n");
 	}
 }
 
