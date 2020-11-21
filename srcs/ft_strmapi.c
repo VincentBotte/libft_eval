@@ -6,7 +6,7 @@
 /*   By: vbotte <vbotte@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/21 12:38:01 by vbotte            #+#    #+#             */
-/*   Updated: 2020/11/21 12:56:46 by vbotte           ###   ########.fr       */
+/*   Updated: 2020/11/21 13:00:53 by vbotte           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ void 	test3()
 		printf("User		: %s\n", ft_strmapi(0, &ft_test));
 	}
 	{
-		printf("Expected	: \n");
+		printf("Expected	: (null)\n");
 	}
 }
 
@@ -53,7 +53,7 @@ void 	test4()
 		printf("User		: %s\n", ft_strmapi("Salut", 0));
 	}
 	{
-		printf("Expected	: \n");
+		printf("Expected	: (null)\n");
 	}
 }
 
