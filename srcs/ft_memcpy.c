@@ -6,7 +6,7 @@
 /*   By: vbotte <vbotte@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/08 19:10:10 by vbotte            #+#    #+#             */
-/*   Updated: 2020/09/23 17:32:30 by vfurmane         ###   ########.fr       */
+/*   Updated: 2020/11/22 16:15:39 by echin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,22 @@ void	test2(void)
 
 void	test3(void)
 {
+	{
+		char	str[] = "Hello world and 42";
+
+		ft_memcpy(str, str + 2, 6);
+		printf("User		: %s\n", str);
+	}
+	{
+		char	str[] = "Hello world and 42";
+
+		memcpy(str, str + 2, 6);
+		printf("Expected	: %s\n", str);
+	}
+}
+
+void	test4(void)
+{
 	int	arr[] = { 1, 23, 54, 0, 74, 234, 13689 };
 
 	{
@@ -74,11 +90,13 @@ void	test3(void)
 
 int		main(void)
 {
-	printf("===== TEST1 =====\n\n");
+	printf("===== TEST1 =====\n");
 	test1();
-	printf("===== TEST2 =====\n\n");
+	printf("\n===== TEST2 =====\nOverlapping memory (dest > src)\n\n");
 	test2();
-	printf("===== TEST3 =====\n\n");
+	printf("\n===== TEST3 =====\nOverlapping memory (dest < src)\n\n");
 	test3();
+	printf("\n===== TEST4 =====\n");
+	test4();
 	return (0);
 }
