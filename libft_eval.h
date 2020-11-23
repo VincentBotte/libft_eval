@@ -6,7 +6,7 @@
 /*   By: vbotte <vbotte@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/19 14:02:38 by vbotte            #+#    #+#             */
-/*   Updated: 2020/11/21 12:50:38 by vbotte           ###   ########.fr       */
+/*   Updated: 2020/11/23 22:59:22 by echin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,3 +46,4 @@ char			*ft_itoa(int n);
 char			*ft_strtrim(char const *s1, char const *set);
 char			**ft_split(char const *s, char c);
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void			ft_putstr_fd(char *s, int fd);
