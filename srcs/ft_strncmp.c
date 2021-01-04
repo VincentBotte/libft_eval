@@ -84,6 +84,24 @@ void	test4()
 	}
 }
 
+void    test5()
+{
+        char    str1[] = "test\200";
+        char    str2[] = "test\0";
+        int             len = 6;
+
+        {
+                int     ret = ft_strncmp(str1, str2, len);
+
+                printf("User            : %d\n", ret);
+        }
+        {
+                int     ret = strncmp(str1, str2, len);
+
+                printf("Expected        : %d\n", ret);
+        }
+}
+
 int		main()
 {
 	printf("===== TEST1 =====\n\n");
@@ -94,5 +112,7 @@ int		main()
 	test3();
 	printf("===== TEST4 =====\n\n");
 	test4();
+	printf("===== TEST5 =====\n\n");
+	test5();
     return (0);
 }
