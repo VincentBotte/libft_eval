@@ -116,6 +116,32 @@ void	test4()
 	}
 }
 
+void    test5()
+{
+        char    str[] = "Hello World";
+        char    find[] = "World";
+        size_t  len = 8;
+
+        {
+                char    *ptr;
+
+                ptr = ft_strnstr(str, find, len);
+                if (!ptr)
+                        printf("User            : Not found\n");
+                else
+                        printf("User            : (%c)%s -> %d\n", *ptr, ptr + 1, (int)(ptr - str + 1));
+        }
+        {
+                char    *ptr;
+
+                ptr = strnstr(str, find, len);
+                if (!ptr)
+                        printf("Expected        : Not found\n");
+                else
+                        printf("Expected        : (%c)%s -> %d\n", *ptr, ptr + 1, (int)(ptr - str + 1));
+        }
+}
+
 int		main()
 {
 	printf("===== TEST1 =====\n\n");
@@ -126,5 +152,7 @@ int		main()
 	test3();
 	printf("===== TEST4 =====\n\n");
 	test4();
+	printf("===== TEST5 =====\n\n");
+	test5();
     return (0);
 }
